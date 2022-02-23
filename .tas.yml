@@ -6,7 +6,7 @@ preMerge:
 preRun:
      command:
         - npm ci
-        - npm install --save-dev typescript && npx tsc --version && npx tsc -p ./
+        - npm ci --save-dev typescript && npx tsc --version && npx tsc -p ./
 postMerge:
   pattern: 
     - "./test/test-python-shell.js"
