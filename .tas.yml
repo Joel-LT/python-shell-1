@@ -3,6 +3,7 @@ framework: mocha
 preMerge:
   pattern:
     - "./test/test-python-shell.js"
+    - "./test/test-python-shell.ts"
 preRun:
      command:
         - npm install
@@ -11,6 +12,7 @@ preRun:
 postMerge:
   pattern: 
     - "./test/test-python-shell.js"
+    - "./test/test-python-shell.ts"
 postRun:
      command:
         - node --version
