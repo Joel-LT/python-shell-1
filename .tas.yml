@@ -3,16 +3,16 @@ framework: mocha
 preMerge:
   pattern:
     # - "./test/test-python-shell.js"
-    - "./test/test-python-shell.ts"
+    - "./test/test-python-shell.js"
 preRun:
      command:
         - npm install
-        - npm run tsc
+        - npx tsc
         # - npm ci --save-dev typescript && npx tsc --version && npx tsc -p ./
 postMerge:
   pattern: 
     # - "./test/test-python-shell.js"
-    - "./test/test-python-shell.ts"
+    - "./test/test-python-shell.js"
 postRun:
      command:
         - node --version
