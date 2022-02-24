@@ -6,7 +6,7 @@ preMerge:
 preRun:
      command:
         - npm install
-        - npm tsc
+        - npm run tsc
         # - npm ci --save-dev typescript && npx tsc --version && npx tsc -p ./
 postMerge:
   pattern: 
