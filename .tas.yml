@@ -5,8 +5,9 @@ preMerge:
     - "./test/test-python-shell.js"
 preRun:
      command:
-        - npm ci
-        - npm ci --save-dev typescript && npx tsc --version && npx tsc -p ./
+        - npm install
+
+        # - npm ci --save-dev typescript && npx tsc --version && npx tsc -p ./
 postMerge:
   pattern: 
     - "./test/test-python-shell.js"
@@ -14,5 +15,6 @@ postRun:
      command:
         - node --version
 configFile: mocharc.yml
-nodeVersion: 12.22.6
-version: 1.0
+
+nodeVersion: 14.16.1
+version: 2.1
